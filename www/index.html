@@ -91,12 +91,22 @@
 
 <!-- Movie detail page -->
 <div data-role="page" id="MovieDetailPage">
-
-    <div data-role="header" data-theme="b">
-        <a href="#SearchMoviePage" class="ui-btn-left ui-btn ui-btn-a ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-arrow-l">Back</a>
-        <h1 class="ui-title">Movie Detail</h1>
-        <a href="#AddMovieRatingPage" class="ui-btn-right ui-btn ui-btn-a ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-star">Write Review</a>
-    </div>
+    <header data-role="header" data-theme="b">
+        <h1>Movie Detail</h1>
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#SearchMoviePage" data-icon="arrow-l" data-theme="a">Back</a>
+                </li>
+                <li>
+                    <a href="#ViewMovieRatingsPage" data-icon="comment" data-theme="a">View Reviews</a>
+                </li>
+                <li>
+                    <a href="#AddMovieRatingPage" data-icon="star" data-theme="a">Write Review</a>
+                </li>
+            </ul>
+         </div>
+    </header>
     <section data-role="content">
         <div id="movieTop"></div>
         <ul id="movieDetails" data-role="listview">
@@ -109,9 +119,16 @@
 
 <!--Add Movie Rating page-->
 <div data-role="page" id="AddMovieRatingPage">
+
     <header data-role="header" data-theme="b">
-        <a href="#MovieDetailPage" class="ui-btn-left ui-btn ui-btn-a ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-arrow-l">Back</a>
-        <h1 class="ui-title">Add a movie review</h1>
+        <h1>Add a movie review</h1>
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#MovieDetailPage" data-icon="arrow-l" data-theme="a">Back</a>
+                </li>
+            </ul>
+        </div>
     </header>
     <section data-role="content">
         <div>
