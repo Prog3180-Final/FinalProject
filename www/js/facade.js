@@ -10,37 +10,43 @@ function updateUserNameDropdown(selectElement){
         });
         $(selectElement).selectmenu("refresh");
     }
-    Type.RJselectAll(options,callback);
+    User.selectAll(options,callback);
 };
 
-function RJaddFeedback(){
-    if (doValidate_RJfrmAddFeedback()) {
-        var businessName = $("#RJtxtBusinessNameAdd").val();
-        var typeId = $("#RJselectTypeAdd").val();
-        var reviewerEmail = $("#RJtxtReviewerEmailAdd").val();
-        var reviewerComments = $("#RJtxtReviewerCommentsAdd").val();
-        var reviewDate = $("#RJtxtReviewDateAdd").val();
-        var hasRating = false;
-        var rating1 = 0;
-        var rating2 = 0;
-        var rating3 = 0;
-        if ($("#RJcheckboxAddRatings").prop("checked") == true) {
-            hasRating = true;
-            rating1 = $("#RJtxtFoodQualityRatingAdd").val();
-            rating2 = $("#RJtxtServiceRatingAdd").val();
-            rating3 = $("#RJtxtValueRatingAdd").val();
-        }
-        var options = [businessName, typeId, reviewerEmail, reviewerComments,reviewDate,hasRating, rating1, rating2, rating3];
+function addMovieReview(){
+    if (doValidate_frmAddMovieReview()) {
+        var movieId = JSON.parse(localStorage.getItem("movie")).imdbID;
+        var reviewerId = $("#selectReviewerUserName").val();
+        var reviewerComments = $("#txtReviewerComments").val();
+        var rating = $("#txtMovieRating").val();
+        var recommend = $("#checkboxRecommend").prop("checked");
+        var reviewDate = new Date().toISOString().substring(0,10);
+        var options = [movieId,reviewerId,reviewerComments,recommend,rating,reviewDate];
         function callback(){
             console.info("Success: record inserted successfully");
         }
-        Review.RJinsert(options,callback);
+        Review.insert(options,callback);
     } else {
         console.error("Add Review validation failed");
     }
 };
 
-function RJgetReviews(){
+function addUser(){
+    if(doValidate_frmUserRegistration()){
+        var userName = $("#txtUserName").val();
+        var emailAddress =$("#txtEmailAddress").val();
+        var phoneNumber = $("#txtPhoneNumber").val();
+        var options = [userName,emailAddress,phoneNumber];
+        function callback(){
+            console.info("Success: record inserted successfully");
+        }
+        User.insert(options,callback);
+    } else {
+        console.error("Add user validation failed");
+    }
+}
+//TODO:
+function getReviews(){
     var options = [];
     function callback(tx,results){
         $("#RJFeedbackList").html("");
@@ -62,7 +68,7 @@ function RJgetReviews(){
         });
         $("#RJFeedbackList").listview("refresh");
     }
-    Review.RJselectAll(options,callback);
+    Review.selectALl(options,callback);
 }
 
 function RJshowCurrentReview (){
@@ -129,6 +135,6 @@ function RJdeleteFeedback(){
     Review.RJdelete(options,callback);
 };
 
-function RJclearDatabase(){
+function clearDatabase(){
     DB.dropTables();
 }

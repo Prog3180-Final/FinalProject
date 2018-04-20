@@ -8,7 +8,7 @@
 var Review = {
     insert: function(options, callback){
         function txFunction(tx) {
-            var sql = "INSERT INTO review(reviewerId,reviewerComments,recommend,rating,reviewDate) VALUES (?,?,?,?,?);"
+            var sql = "INSERT INTO review(movieId,reviewerId,reviewerComments,recommend,rating,reviewDate) VALUES (?,?,?,?,?,?);"
 
             tx.executeSql(sql, options, callback, errorHandler);
         }
@@ -41,7 +41,7 @@ var Review = {
     },
     update: function(options, callback){
         function txFunction(tx) {
-            var sql = "UPDATE review SET reviewerId=?, reviewerComments=?, recommend=?, rating=?,reviewDate=? WHERE id=?;";
+            var sql = "UPDATE review SET movieId=?,reviewerId=?, reviewerComments=?, recommend=?, rating=?,reviewDate=? WHERE id=?;";
             tx.executeSql(sql, options, callback, errorHandler);
         }
         function successTransaction() {
@@ -50,7 +50,7 @@ var Review = {
         }
         db.transaction(txFunction, errorHandler, successTransaction);
     },
-    RJdelete: function(options, callback){
+    delete: function(options, callback){
         function txFunction(tx) {
             var sql = "DELETE FROM review WHERE id=?;";
             tx.executeSql(sql, options, callback, errorHandler);
@@ -64,9 +64,32 @@ var Review = {
 };
 
 var User = {
+    insert : function(options,callback){
+        function txFunction(tx) {
+            var sql = "INSERT INTO user(userName,emailAddress,phoneNumber) VALUES (?,?,?);"
+
+            tx.executeSql(sql, options, callback, errorHandler);
+        }
+        function successTransaction() {
+            alert("User successfully added!");
+            console.info("Success: insert transaction successful");
+        }
+        db.transaction(txFunction, errorHandler, successTransaction);
+    },
+    select: function(options,callback){
+        function txFunction(tx) {
+            var sql = "SELECT * FROM user WHERE id=?;";
+
+            tx.executeSql(sql, options, callback, errorHandler);
+        }
+        function successTransaction() {
+            console.info("Success: select transaction successful");
+        }
+        db.transaction(txFunction, errorHandler, successTransaction);
+    },
     selectAll : function(options,callback){
         function txFunction(tx) {
-            var sql = "SELECT * FROM type;";
+            var sql = "SELECT * FROM user;";
 
             tx.executeSql(sql, options, callback, errorHandler);
         }

@@ -1,52 +1,21 @@
-function frmRJfrmSettings_submit(){
-    var reviewerEmail = $("#RJtxtDefaultReviewerEmail").val();
-    localStorage.setItem('DefaultEmail',reviewerEmail);
-    alert("Default reviewer email saved.");
-}
-
-
-function addFeedbackPage_pageshow(){
-    $("#RJtxtReviewerEmailAdd").val(localStorage.getItem("DefaultEmail"));
-}
-
 function eventHandlers() {
-    $("#RJcheckboxAddRatings").click(function (e) {
-        checkboxAddRatings_click(e);
-    });
-    $("#RJcheckboxModifyRatings").click(function (e) {
-        checkboxModifyRatings_click(e);
-    });
-    $("#btnSaveDefaults").click(frmRJfrmSettings_submit);
 
-    $("#btnSaveRatings").click(RJaddFeedback);
-    $("#btnUpdateFeedback").click(RJupdateFeedback);
-    $("#btnDeleteFeedback").click(RJdeleteFeedback);
-    $("#btnCancelFeedback").click(function(){
-        $.mobile.navigate("#RJViewFeedbackPage");
-    })
+    $("#btnCreateUser").click(addUser);
 
-    $("#addRatings").keyup(function(){
-        calculateRatings($(this));
+    $("#btnSaveMovieReview").click(addMovieReview);
+    //$("#btnUpdateMovieReview").click(updateMovieReview);
+
+    $("#AddMovieRatingPage").on("pageshow",function(){
+        updateUserNameDropdown("#selectReviewerUserName");
     });
-    $("#modifyRatings").keyup(function(){
-        calculateRatings($(this));
-    });
+    //$("#RJEditFeedbackPage").on("pageshow",function(){
+      //  RJupdateTypesDropdown("#RJselectTypeModify","");
+    //});
 
-    $("#RJAddFeedbackPage").on("pageshow",addFeedbackPage_pageshow);
-    $("#RJAddFeedbackPage").on("pageshow",function(){
-        RJupdateTypesDropdown("#RJselectTypeAdd","Others");
-    });
-    $("#RJEditFeedbackPage").on("pageshow",function(){
-        RJupdateTypesDropdown("#RJselectTypeModify","");
-    });
+    //$("#RJViewFeedbackPage").on("pageshow",RJgetReviews);
+    //$("#RJEditFeedbackPage").on("pageshow",RJshowCurrentReview);
 
-    $("#RJViewFeedbackPage").on("pageshow",RJgetReviews);
-    $("#RJEditFeedbackPage").on("pageshow",RJshowCurrentReview);
-    $("#btnClearDatabase").click(RJclearDatabase);
 
-    /*
-
-     */
     $("#searchText").submit(function(e){
         e.preventDefault();
     })
@@ -64,6 +33,7 @@ function eventHandlers() {
         }
     });
 
+    $("#btnClearDatabase").click(clearDatabase);
 
 }
 

@@ -1,116 +1,74 @@
-function doValidate_RJfrmAddFeedback() {
-    var form = $("#RJfrmAddFeedback");
+function doValidate_frmAddMovieReview() {
+    var form = $("#frmAddMovieReview");
     form.validate({
         rules: {
-            RJtxtBusinessNameAdd: {
+            selectReviewerUserName: {
                 required: true,
-                rangelength: [2, 20]
             },
-            RJtxtReviewerEmailAdd: {
+            txtReviewerComments: {
                 required: true,
-                email:true,
             },
-            RJtxtReviewDateAdd: {
-                required: true
-            },
-            RJtxtFoodQualityRatingAdd: {
-                required: "#RJcheckboxAddRatings:checked",
-                range:[0,5]
-            },
-            RJtxtServiceRatingAdd: {
-                required: "#RJcheckboxAddRatings:checked",
-                range:[0,5]
-            },
-            RJtxtValueRatingAdd: {
-                required: "#RJcheckboxAddRatings:checked",
+            txtMovieRating: {
+                required: true,
                 range:[0,5]
             }
-
         },
         messages: {
-            RJtxtBusinessNameAdd: {
-                required: "Business name is required",
-                rangelength: "Business name must be between 2 and 20 characters"
+            selectReviewerUserName: {
+                required: "Reviewer is required"
             },
-            RJtxtReviewerEmailAdd: {
-                required: "Reviewer email is required",
-                emailcheck: "Email format is not correct"
+            txtReviewerComments: {
+                required: "Reviewer comments are required"
             },
-            RJtxtReviewDateAdd: {
-                required: "Review date is required"
-            },
-            RJtxtFoodQualityRatingAdd: {
-                required: "Food quality rating is required",
-                range:"Value must be between 0 and 5"
-            },
-            RJtxtServiceRatingAdd: {
-                required: "Service rating is required",
-                range:"Value must be between 0 and 5"
-            },
-            RJtxtValueRatingAdd: {
-                required: "Value rating is required",
-                range:"Value must be between 0 and 5"
+            txtMovieRating: {
+                required: "Movie rating is required",
+                range: "Movie rating must be between 0-5"
             }
         }
     });
     return form.valid();
 }
 
-function doValidate_RJfrmModifyFeedback() {
-    var form = $("#RJfrmModifyFeedback");
+function doValidate_frmUserRegistration() {
+    var form = $("#frmUserRegistration");
     form.validate({
         rules: {
-            RJtxtBusinessNameModify: {
+            txtUserName: {
                 required: true,
                 rangelength: [2, 20]
             },
-            RJtxtReviewerEmailModify: {
+            txtEmailAddress: {
                 required: true,
                 email:true,
             },
-            RJtxtReviewDateModify: {
-                required: true
+            txtPhoneNumber: {
+                required:false,
+                phonenumber:true
             },
-            RJtxtFoodQualityRatingModify: {
-                required: "#RJcheckboxModifyRatings:checked",
-                range:[0,5]
-            },
-            RJtxtServiceRatingModify: {
-                required: "#RJcheckboxModifyRatings:checked",
-                range:[0,5]
-            },
-            RJtxtValueRatingModify: {
-                required: "#RJcheckboxModifyRatings:checked",
-                range:[0,5]
-            }
 
         },
         messages: {
-            RJtxtBusinessNameModify: {
+            txtUserName: {
                 required: "Business name is required",
                 rangelength: "Business name must be between 2 and 20 characters"
             },
-            RJtxtReviewerEmailModify: {
+            txtEmailAddress: {
                 required: "Reviewer email is required",
                 email: "Email format is not correct"
             },
-            RJtxtReviewDateModify: {
+            txtPhoneNumber: {
                 required: "Review date is required"
-            },
-            RJtxtFoodQualityRatingModify: {
-                required: "Food quality rating is required",
-                range:"Value must be between 0 and 5"
-            },
-            RJtxtServiceRatingModify: {
-                required: "Service rating is required",
-                range:"Value must be between 0 and 5"
-            },
-            RJtxtValueRatingModify: {
-                required: "Value rating is required",
-                range:"Value must be between 0 and 5"
             }
         }
     });
     return form.valid();
 }
+
+
+jQuery.validator.addMethod("phonenumber",
+    function(value,element){
+        var regex = /^[(]?[0-9]{3}[(-]?[0-9]{3}[-]?[0-9]{4}$/;
+        return this.optional(element) || regex.test(value);
+    },
+    "Valid phone numbers");
 

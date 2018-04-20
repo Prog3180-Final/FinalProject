@@ -6,7 +6,7 @@ var db;
  * @param error The error object
  */
 function errorHandler(tx, error) {
-    console.error("SQL error: " + tx + " (" + error.code + ") : " + error.message);
+    console.error(error.message);
 }
 
 var DB = {
@@ -34,11 +34,12 @@ var DB = {
 
             sql = "CREATE TABLE IF NOT EXISTS review( " +
                     "id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT," +
+                    "movieId INTEGER NOT NULL,"+
                     "reviewerId INTEGER NOT NULL," +
                     "reviewerComments TEXT," +
                     "recommend VARCHAR(1)," +
                     "rating INTEGER," +
-                    "reviewDate DATE NOT NULL,"
+                    "reviewDate DATE," +
                     "FOREIGN KEY(reviewerId) REFERENCES user(id));";
 
             function successCreate() {
