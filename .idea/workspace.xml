@@ -2,188 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1a92401-7747-474f-be9d-08dec2ade5dc" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/FinalProject.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-mobile-min/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-mobile-min/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-mobile-min/jquery.mobile-1.4.4.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-mobile-min/jquery.mobile-1.4.4.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-mobile-min/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/LICENSE.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/changelog.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/additional-methods.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/jquery.validate.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/jquery.validate.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_ar.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_az.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_bg.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_bn_BD.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_ca.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_cs.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_da.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_de.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_el.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_es.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_es_AR.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_es_PE.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_et.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_eu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_fa.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_fi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_fr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_ge.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_gl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_he.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_hr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_hu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_hy_AM.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_id.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_is.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_it.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_ja.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_ka.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_kk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_ko.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_lt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_lv.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_mk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_my.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_nl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_no.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_pl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_pt_BR.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_pt_PT.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_ro.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_ru.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_sd.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_si.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_sk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_sl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_sr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_sr_lat.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_sv.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_th.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_tj.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_tr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_uk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_ur.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_vi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_zh.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/messages_zh_TW.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/methods_de.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/methods_es_CL.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/methods_fi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/methods_nl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/dist/localization/methods_pt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-validation/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/.bowerrc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/.jscsrc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/.npmignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/AUTHORS.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/CONTRIBUTING.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/MIT-LICENSE.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/bower.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.min.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/jsonp.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/load.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/parseJSON.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/parseXML.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/script.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/nonce.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/rquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/xhr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/attr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/classes.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/prop.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/support.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/val.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/callbacks.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/access.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/init.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/parseHTML.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/ready.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/var/rsingleTag.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/addGetHookIf.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/curCSS.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/defaultDisplay.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/hiddenVisibleSelectors.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/support.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/swap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/cssExpand.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/getStyles.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/isHidden.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/rmargin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/rnumnonpx.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/data.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/Data.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/accepts.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/var/data_priv.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/var/data_user.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/deferred.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/deprecated.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/dimensions.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/effects.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/effects/Tween.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/effects/animatedSelector.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/ajax.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/alias.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/support.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/exports/amd.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/exports/global.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/intro.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/_evalUrl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/support.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/var/rcheckableType.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/offset.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/outro.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/queue.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/queue/delay.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/selector-native.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/selector-sizzle.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/selector.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/serialize.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/sizzle/dist/sizzle.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/sizzle/dist/sizzle.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/sizzle/dist/sizzle.min.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/sizzle/test/data/empty.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/sizzle/test/data/mixed_sort.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/sizzle/test/data/testinit.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/sizzle/test/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/sizzle/test/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/sizzle/test/unit/extending.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/sizzle/test/unit/selector.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/sizzle/test/unit/utilities.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/findFilter.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/rneedsContext.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/arr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/class2type.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/concat.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/hasOwn.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/indexOf.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/pnum.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/push.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/rnotwhite.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/slice.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/strundefined.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/support.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/toString.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/wrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/www/js/API.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/www/js/DAL.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/www/js/database.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/www/js/events.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/www/js/facade.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/www/js/util.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change beforePath="$PROJECT_DIR$/www/css/index.css" afterPath="$PROJECT_DIR$/www/css/index.css" />
       <change beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -197,25 +25,32 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="554">
+              <caret line="282" column="42" lean-forward="false" selection-start-line="282" selection-start-column="42" selection-end-line="282" selection-end-column="42" />
+              <folding>
+                <element signature="e#2319#2325#0" expanded="true" />
+                <element signature="e#3487#3493#0" expanded="true" />
+                <element signature="e#4273#4279#0" expanded="true" />
+                <element signature="e#6068#6074#0" expanded="true" />
+                <element signature="e#7250#7256#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#section#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#11417#11423#0" expanded="true" />
+                <element signature="e#13528#13534#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/index.html">
+      <file leaf-file-name="API.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/API.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-              <folding>
-                <element signature="e#2978#2984#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="347">
+              <caret line="86" column="52" lean-forward="true" selection-start-line="86" selection-start-column="52" selection-end-line="86" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -225,14 +60,114 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="events.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/events.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="62" column="76" lean-forward="false" selection-start-line="62" selection-start-column="76" selection-end-line="62" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/database.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="util.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/util.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="624">
+              <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DAL.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/js/DAL.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="66" column="13" lean-forward="false" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="facade.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/facade.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logo.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/img/logo.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>2018 Rawa Jalal</find>
+      <find>Feedback</find>
+      <find>Game Score Saver</find>
+      <find>Cave Shmup Score Saver</find>
+      <find>const</find>
+      <find>httpRequest</find>
+      <find>console.log</find>
+      <find>listView</find>
+      <find>ViewGameScorePage</find>
+      <find>movieListView</find>
+      <find>id=&quot;movieList</find>
+      <find>href=</find>
+      <find>listview(&quot;re</find>
+      <find>SettingsPage</find>
+      <find>.on</find>
+      <find>movieClicked</find>
+      <find>debugger</find>
+      <find>renderMovie</find>
+      <find>txtFullname</find>
+      <find>Add a game score</find>
+      <find>search</find>
+      <find>#UserRegi</find>
+      <find>Settings</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Game scores</replace>
+      <replace>Movie database</replace>
+      <replace>var</replace>
+      <replace>ViewMovieRatingPage</replace>
+      <replace>movieListView</replace>
+      <replace>Add a movie review</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -241,7 +176,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/www/js/util.js" />
+        <option value="$PROJECT_DIR$/www/css/index.css" />
+        <option value="$PROJECT_DIR$/www/js/events.js" />
+        <option value="$PROJECT_DIR$/www/js/API.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/js/database.js" />
+        <option value="$PROJECT_DIR$/www/js/facade.js" />
+        <option value="$PROJECT_DIR$/www/js/DAL.js" />
       </list>
     </option>
   </component>
@@ -256,10 +198,9 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="974" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1058" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -277,7 +218,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -288,31 +228,13 @@
             <path>
               <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="FinalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FinalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FinalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery-validation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FinalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery-validation" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="FinalProject" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
@@ -324,13 +246,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../jquery-mobile-movie-lookup-master" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RunDashboard">
@@ -347,6 +270,16 @@
   </component>
   <component name="RunManager">
     <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FinalProject/www/index.html" />
+    <configuration default="true" type="PhoneGap" factoryName="PhoneGap/Cordova">
+      <option name="myExecutable" value="C:\Users\Rawa\AppData\Roaming\npm\cordova.cmd" />
+      <option name="myWorkDir" value="$PROJECT_DIR$" />
+      <option name="myCommand" value="emulate" />
+      <option name="myPassParent" value="true" />
+      <option name="myPlatform" value="browser" />
+      <option name="myExtraArgs" value="" />
+      <option name="hasTarget" value="false" />
+      <option name="target" value="" />
+    </configuration>
     <recent_temporary>
       <list size="1">
         <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
@@ -366,34 +299,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524113849261</updated>
-      <workItem from="1524113851291" duration="1171000" />
+      <workItem from="1524113851291" duration="1256000" />
+      <workItem from="1524159632631" duration="20714000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1171000" />
+    <option name="totallyTimeSpent" value="21970000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-7" y="0" width="1058" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16698657" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.009594883" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -408,7 +342,64 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <marker date="1524160178315" expanded="true" signature="339:350" ph="{&quot;jquery&quot;: &quot;2.1.4&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="e#2319#2325#0" expanded="true" />
+            <element signature="e#3487#3493#0" expanded="true" />
+            <element signature="e#4273#4279#0" expanded="true" />
+            <element signature="e#6068#6074#0" expanded="true" />
+            <element signature="e#7250#7256#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#section#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#11417#11423#0" expanded="true" />
+            <element signature="e#13528#13534#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/jquery-validation/dist/jquery.validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <marker date="1524160178315" expanded="true" signature="339:350" ph="{&quot;jquery&quot;: &quot;2.1.4&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/events">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -420,27 +411,80 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/www/js/util.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="624">
+          <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/events.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="62" column="76" lean-forward="false" selection-start-line="62" selection-start-column="76" selection-end-line="62" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/API.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="86" column="52" lean-forward="true" selection-start-line="86" selection-start-column="52" selection-end-line="86" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        <state relative-caret-position="554">
+          <caret line="282" column="42" lean-forward="false" selection-start-line="282" selection-start-column="42" selection-end-line="282" selection-end-column="42" />
           <folding>
-            <element signature="e#2978#2984#0" expanded="true" />
+            <element signature="e#2319#2325#0" expanded="true" />
+            <element signature="e#3487#3493#0" expanded="true" />
+            <element signature="e#4273#4279#0" expanded="true" />
+            <element signature="e#6068#6074#0" expanded="true" />
+            <element signature="e#7250#7256#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#section#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#11417#11423#0" expanded="true" />
+            <element signature="e#13528#13534#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/facade.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/database.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/DAL.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="66" column="13" lean-forward="false" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
