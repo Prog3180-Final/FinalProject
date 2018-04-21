@@ -90,8 +90,8 @@ function showCurrentReview (){
         $("#selectReviewerUserNameModify").selectmenu("refresh");
         $("#txtReviewerCommentsModify").val(row['reviewerComments']);
         $("#txtMovieRatingModify").val(row['rating']);
-        if($("#checkboxRecommendModify").val(row['recommend'])=="true"){
-            $("#checkboxRecommendModify").checkboxradio('enable');
+        if(row['recommend']=="true"){
+            $("#checkboxRecommendModify").attr("checked",true).checkboxradio("refresh");
         }
     }
     Review.select(options,callback);
