@@ -13,7 +13,8 @@ function updateUserNameDropdown(selectElement){
     User.selectAll(options,callback);
 };
 
-function addMovieReview(){
+function addMovieReview(e){
+    e.preventDefault();
     if (doValidate_frmAddMovieReview()) {
         var movieId = JSON.parse(localStorage.getItem("movie")).imdbID;
         var reviewerId = $("#selectReviewerUserName").val();
@@ -24,6 +25,7 @@ function addMovieReview(){
         var options = [movieId,reviewerId,reviewerComments,recommend,rating,reviewDate];
         function callback(){
             console.info("Success: record inserted successfully");
+            $.mobile.navigate("#MovieDetailPage")
         }
         Review.insert(options,callback);
     } else {
@@ -45,94 +47,83 @@ function addUser(){
         console.error("Add user validation failed");
     }
 }
-//TODO:
-function getReviews(){
-    var options = [];
-    function callback(tx,results){
-        $("#RJFeedbackList").html("");
-        $.each(results.rows,function(index,row){
-            var overallRating = Boolean(row['hasRating']) ? (row['rating1'] + row['rating2'] + row['rating3']) : 0;
-            var html = "<h3>Business Name: "+row['businessName']+"</h3>"+
-                "<p>Reviewer Email: "+row['reviewerEmail']+"</p>"+
-                "<p>Comments: "+row['reviewerComments']+"</p>"+
-                "<p>Overall Rating: "+overallRating+"</p>";
 
-            $("#RJFeedbackList").append($('<li>',{
+function getReviews(){
+    var movie = JSON.parse(localStorage.getItem("movie"));
+    var movieId = movie.imdbID;
+    var options = [movieId];
+    function callback(tx,results){
+        $("#viewMovieReviewTitle").html(movie.Title);
+        $("#viewMovieReviewPoster").attr("src",movie.Poster);
+        $("#movieRatingsList").html("");
+        $.each(results.rows,function(index,row){
+            var html ="";
+            var userOptions = [row['reviewerId']];
+            User.select(userOptions,function(userTx,userResults){
+                var userRow = userResults.rows.item(0);
+                html+="<h3>Reviewer username: "+userRow['userName']+"</h3>";
+            });
+            html+= "<p>Review date: "+row['reviewDate']+"</p>"+
+                "<p>User recommended:"+ (row['recommend']=="true" ? "Yes" : "No")+"</p>" +
+                "<p>Rating: "+row['rating']+"</p>" +
+                "<p>Comments: "+row['reviewerComments']+"</p>";
+            $("#movieRatingsList").append($('<li>',{
                 'data-icon':false
             }).append($('<a>',{
-                href:"#RJEditFeedbackPage",
-                'data-row-id':row['id']
+                href:"#ModifyMovieReviewPage",
+                'data-review-id':row['id']
             }).on("click",function(){
-                localStorage.setItem("modifyReviewId",$(this).attr('data-row-id'));
+                localStorage.setItem("modifyReviewId",$(this).attr('data-review-id'));
             }).html(html)));
         });
-        $("#RJFeedbackList").listview("refresh");
+        $("#movieRatingsList").listview("refresh");
     }
-    Review.selectALl(options,callback);
+    Review.selectByMovieId(options,callback);
 }
 
-function RJshowCurrentReview (){
-    var reviewId = localStorage.getItem("modifyReviewId");
-    var options=[reviewId];
+function showCurrentReview (){
+    var id = localStorage.getItem("modifyReviewId");
+    var options=[id];
     function callback(tx,results){
         var row = results.rows.item(0);
-        $("#RJtxtBusinessNameModify").val(row['businessName']);
-        $("#RJselectTypeModify").val(row['typeId']);
-        $("#RJselectTypeModify").selectmenu("refresh");
-        $("#RJtxtReviewerEmailModify").val(row['reviewerEmail']);
-        $("#RJtxtReviewerCommentsModify").val(row['reviewerComments']);
-        $("#RJtxtReviewDateModify").val(row['reviewDate']);
-        if (Boolean(row['hasRating'])) {
-            $("#RJcheckboxModifyRatings").checkboxradio('enable');
-            $("#RJtxtFoodQualityRatingModify").val(row['rating1']);
-            $("#RJtxtServiceRatingModify").val(row['rating2']);
-            $("#RJtxtValueRatingModify").val(row['rating3']);
-            $("#RJtxtOverallRatingsModify").val(row['rating1']+row['rating2']+row['rating3']);
+        $("#selectReviewerUserNameModify").val(row['reviewerId']);
+        $("#selectReviewerUserNameModify").selectmenu("refresh");
+        $("#txtReviewerCommentsModify").val(row['reviewerComments']);
+        $("#txtMovieRatingModify").val(row['rating']);
+        if($("#checkboxRecommendModify").val(row['recommend'])=="true"){
+            $("#checkboxRecommendModify").checkboxradio('enable');
         }
     }
-    Review.RJselect(options,callback);
+    Review.select(options,callback);
 };
 
-function RJupdateFeedback(){
-    if(doValidate_RJfrmModifyFeedback()) {
+function updateMovieReview(e){
+    e.preventDefault();
+    if(doValidate_frmModifyMovieReview()) {
         var id = localStorage.getItem("modifyReviewId");
-        var hasRating = false;
-        var rating1 = 0;
-        var rating2 = 0;
-        var rating3 = 0;
-        var businessName = $("#RJtxtBusinessNameModify").val();
-        var typeId = $("#RJselectTypeModify").val();
-        var reviewerEmail = $("#RJtxtReviewerEmailModify").val();
-        var reviewerComments = $("#RJtxtReviewerCommentsModify").val();
-        var reviewDate = $("#RJtxtReviewDateModify").val();
-        if ($("#RJcheckboxModifyRatings").prop("checked") == true) {
-            hasRating = true;
-            rating1 = $("#RJtxtFoodQualityRatingModify").val();
-            rating2 = $("#RJtxtServiceRatingModify").val();
-            rating3 = $("#RJtxtValueRatingModify").val();
-        }
-
-        var options = [businessName, typeId, reviewerEmail, reviewerComments, reviewDate, hasRating, rating1, rating2, rating3,id];
-
+        var recommend = Boolean($("#checkboxRecommendModify").prop("checked"))? true: false
+        var reviewerId = $("#selectReviewerUserNameModify").val();
+        var reviewerComments = $("#txtReviewerCommentsModify").val();
+        var rating = $("#txtMovieRatingModify").val();
+        var options = [reviewerId, reviewerComments, recommend, rating,id];
         function callback() {
             console.info("Review updated successfully");
-            $.mobile.navigate("#RJViewFeedbackPage");
+            $.mobile.navigate("#ViewMovieReviewPage");
         }
-
-        Review.RJupdate(options, callback);
+        Review.update(options, callback);
     } else {
         console.error("Review update validation failed");
     }
 };
 
-function RJdeleteFeedback(){
+function deleteMovieReview(){
     var id = localStorage.getItem("modifyReviewId");
     var options=[id];
     function callback(){
         console.info("Review deleted successfully");
-        $.mobile.navigate("#RJViewFeedbackPage");
+        $.mobile.navigate("#ViewMovieReviewPage");
     }
-    Review.RJdelete(options,callback);
+    Review.delete(options,callback);
 };
 
 function clearDatabase(){

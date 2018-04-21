@@ -1,3 +1,6 @@
+#movieTop{
+    margin-bottom:2rem;
+}
 .text-center {
     text-align: center;
 }
@@ -10,4 +13,21 @@ input.error,
 select.error,
 textarea.error {
     border: 1px red solid;
+}
+
+.flex-center {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.btn-blue {
+    text-shadow: none !important;
+    background-color: #3388cc !important;
+    color: white !important;
+}
+.btn-gray {
+    text-shadow: none !important;
+    background-color: #333 !important;
+    color: white !important;
 }

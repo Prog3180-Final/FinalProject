@@ -42,7 +42,7 @@
         <h2 class="text-center">Movie database</h2>
         <p>Welcome to the Rawa Jalal's and Steven Ye's Movie database</p>
         <div align="center">
-            <img src="img/icon.png" alt="Game Score" width="80%">
+            <img src="img/icon.png" alt="Movie database icon" width="80%">
         </div>
         <p>Please feel free to contact me if you have any suggestions!</p>
     </section>
@@ -99,16 +99,16 @@
                     <a href="#SearchMoviePage" data-icon="arrow-l" data-theme="a">Back</a>
                 </li>
                 <li>
-                    <a href="#ViewMovieRatingsPage" data-icon="comment" data-theme="a">View Reviews</a>
+                    <a href="#ViewMovieReviewPage" data-icon="comment" data-theme="a">View Reviews</a>
                 </li>
                 <li>
-                    <a href="#AddMovieRatingPage" data-icon="star" data-theme="a">Write Review</a>
+                    <a href="#AddMovieReviewPage" data-icon="star" data-theme="a">Write Review</a>
                 </li>
             </ul>
          </div>
     </header>
     <section data-role="content">
-        <div id="movieTop"></div>
+        <div id="movieTop" class="flex-center"></div>
         <ul id="movieDetails" data-role="listview">
         </ul>
     </section>
@@ -117,9 +117,8 @@
     </footer>
 </div>
 
-<!--Add Movie Rating page-->
-<div data-role="page" id="AddMovieRatingPage">
-
+<!--Add Movie Review page-->
+<div data-role="page" id="AddMovieReviewPage">
     <header data-role="header" data-theme="b">
         <h1>Add a movie review</h1>
         <div data-role="navbar" data-iconpos="top">
@@ -134,14 +133,12 @@
         <div>
             <h2 id="reviewMovieTitle"></h2>
             <form id="frmAddMovieReview" name="frmAddMovieReview" data-ajax="false">
-
                 <label for="selectReviewerUserName" class="ui-select">Reviewer username</label>
                 <select name="selectReviewerUserName" id="selectReviewerUserName">
                 </select>
 
                 <label for="txtReviewerComments">Reviewer Comments:</label>
-                <textarea id="txtReviewerComments" name="txtReviewerComments" rows="25" data-theme="a" data-clear-btn="true" placeholder="Enter movie review">
-                </textarea>
+                <textarea id="txtReviewerComments" name="txtReviewerComments" rows="25" data-theme="a" data-clear-btn="true" placeholder="Enter movie review"></textarea>
 
                 <label for="txtMovieRating">Movie rating (0-5):</label>
                 <input type="text" id="txtMovieRating" name="txtMovieRating" value="0" data-theme="a"
@@ -149,9 +146,6 @@
 
                 <label for="checkboxRecommend">Do you recommend this movie?</label>
                 <input type="checkbox" name="checkboxRecommend" id="checkboxRecommend" class="custom" />
-
-
-
                 <div>
                     <button name="btnSaveMovieReview" id="btnSaveMovieReview" class="btn-blue ui-corner-all ui-btn ui-btn-inline">Save</button>
                 </div>
@@ -163,29 +157,28 @@
     </footer>
 </div>
 
-<!--Game scores page-->
-<div data-role="page" id="ViewMovieRatingPage">
+<!--View movie Reviews page-->
+<div data-role="page" id="ViewMovieReviewPage">
     <header data-role="header" data-theme="b" data-position="fixed">
-        <h1> List of game scores </h1>
+        <h1>View movie reviews</h1>
         <div data-role="navbar" data-iconpos="top">
             <ul>
                 <li>
-                    <a href="#HomePage" data-icon="home" data-theme="a" class="ui-btn-active ui-state-persist">Home</a>
-                </li>
-                <li>
-                    <a href="#AddMovieRatingPage" data-icon="plus" data-theme="a">Add</a>
-                </li>
-                <li>
-                    <a href="#ViewMovieRatingPage" data-icon="grid" data-theme="a">Game scores</a>
-                </li>
-                <li>
-                    <a href="#UserRegistrationPage" data-icon="gear" data-theme="a">User Registration</a>
+                    <a href="#MovieDetailPage" data-icon="arrow-l" data-theme="a">Back</a>
                 </li>
             </ul>
         </div>
     </header>
     <section data-role="content">
-        <ul id="RJFeedbackList" data-role="listview" class="ui-listview-inset">
+        <h1 class="text-center" id="viewMovieReviewTitle"></h1>
+        <div class="flex-center">
+
+            <img src="" id="viewMovieReviewPoster">
+        </div>
+        <hr>
+        <h3 class="text-center">Reviews</h3>
+        <hr>
+        <ul id="movieRatingsList" data-role="listview" class="ui-listview-inset">
 
         </ul>
     </section>
@@ -196,72 +189,38 @@
 
 </div>
 
-<!--Modify Feedback page-->
-<div data-role="page" id="RJEditFeedbackPage">
+<!--Modify Review page-->
+<div data-role="page" id="ModifyMovieReviewPage">
     <header data-role="header" data-theme="b" data-position="fixed">
-        <h1> Modify Feedback </h1>
+        <h1>Modify Movie Review</h1>
         <div data-role="navbar" data-iconpos="top">
             <ul>
                 <li>
-                    <a href="#HomePage" data-icon="home" data-theme="a" class="ui-btn-active ui-state-persist">Home</a>
-                </li>
-                <li>
-                    <a href="#AddMovieRatingPage" data-icon="plus" data-theme="a">Add</a>
-                </li>
-                <li>
-                    <a href="#ViewMovieRatingPage" data-icon="grid" data-theme="a">Game scores</a>
-                </li>
-                <li>
-                    <a href="#UserRegistrationPage" data-icon="gear" data-theme="a">User Registration</a>
+                    <a href="#ViewMovieReviewPage" data-icon="arrow-l" data-theme="a">Back</a>
                 </li>
             </ul>
         </div>
     </header>
     <section data-role="content">
         <div>
-            <form id="RJfrmModifyFeedback" name="RJfrmModifyFeedback" data-ajax="false">
-                <label for="RJtxtBusinessNameModify">Business Name:</label>
-                <input type="text" id="RJtxtBusinessNameModify" name="RJtxtBusinessNameModify" value="" class="required" data-theme="a" data-clear-btn="true"
-                       placeholder="Enter Business Name">
-
-                <label for="RJselectTypeModify" class="select">Type:</label>
-                <select name="RJselectTypeModify" id="RJselectTypeModify">
+            <form id="frmModifyMovieReview" name="frmModifyMovieReview" data-ajax="false">
+                <label for="selectReviewerUserNameModify" class="ui-select">Reviewer username</label>
+                <select name="selectReviewerUserNameModify" id="selectReviewerUserNameModify">
                 </select>
 
-                <label for="RJtxtReviewerEmailModify">Reviewer Email:</label>
-                <input type="text" id="RJtxtReviewerEmailModify" name="RJtxtReviewerEmailModify" value="" data-theme="a" data-clear-btn="true"
-                       placeholder="Enter Reviewer Email">
+                <label for="txtReviewerCommentsModify">Reviewer Comments:</label>
+                <textarea id="txtReviewerCommentsModify" name="txtReviewerCommentsModify" rows="25" data-theme="a" data-clear-btn="true" placeholder="Enter movie review"></textarea>
 
-                <label for="RJtxtReviewerCommentsModify">Reviewer Comments:</label>
-                <textarea id="RJtxtReviewerCommentsModify" name="RJtxtReviewerCommentsModify" data-theme="a" data-clear-btn="true"
-                          placeholder="Enter Reviewer Comments"></textarea>
+                <label for="txtMovieRatingModify">Movie rating (0-5):</label>
+                <input type="text" id="txtMovieRatingModify" name="txtMovieRatingModify" value="0" data-theme="a"
+                       data-clear-btn="true">
 
-                <label for="RJtxtReviewDateModify">Review Date:</label>
-                <input type="date" id="RJtxtReviewDateModify" name="RJtxtReviewDateModify" data-theme="a">
-
-                <label for="RJcheckboxModifyRatings">Do you want to add your ratings?</label>
-                <input type="checkbox" name="RJcheckboxModifyRatings" id="RJcheckboxModifyRatings" class="custom" />
-
-                <div id="modifyRatings" style="display:none">
-                    <label for="RJtxtFoodQualityRatingModify">Food Quality(0-5):</label>
-                    <input type="text" id="RJtxtFoodQualityRatingModify" name="RJtxtFoodQualityRatingModify" value="0" data-theme="a"
-                           data-clear-btn="true">
-
-                    <label for="RJtxtServiceRatingModify">Service (0-5):</label>
-                    <input type="text" id="RJtxtServiceRatingModify" name="RJtxtServiceRatingModify" value="0"  data-theme="a" data-clear-btn="true">
-
-                    <label for="RJtxtValueRatingModify">Value (0-5):</label>
-                    <input type="text" id="RJtxtValueRatingModify" name="RJtxtValueRatingModify" value="0" data-theme="a" data-clear-btn="true">
-
-                    <label for="RJtxtOverallRatingsModify">Overall Rating (calculated):</label>
-                    <input type="text" id="RJtxtOverallRatingsModify" name="RJtxtOverallRatingsModify" value="" data-theme="a" data-clear-btn="true"
-                           readonly>
-                </div>
+                <label for="checkboxRecommendModify">Do you recommend this movie?</label>
+                <input type="checkbox" name="checkboxRecommendModify" id="checkboxRecommendModify" class="custom" />
 
                 <div data-role="controlgroup" data-type="horizontal">
-                    <a href="#" id="btnCancelFeedback" class="btn-yellow ui-btn ui-corner-all">Cancel</a>
-                    <a href="#" id="btnDeleteFeedback" class="btn-gray ui-btn ui-corner-all">Delete</a>
-                    <a href="#" id="btnUpdateFeedback" class="btn-blue ui-btn ui-corner-all">Update</a>
+                    <a href="#" id="btnUpdateModifyReview" class="btn-blue ui-btn ui-corner-all">Update</a>
+                    <a href="#" id="btnDeleteModifyReview" class="btn-gray ui-btn ui-corner-all">Delete</a>
                 </div>
             </form>
         </div>
