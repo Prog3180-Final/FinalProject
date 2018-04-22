@@ -1,21 +1,17 @@
 function eventHandlers() {
-
     $("#btnCreateUser").click(addUser);
-
     $("#btnSaveMovieReview").click(addMovieReview);
-    //$("#btnUpdateMovieReview").click(updateMovieReview);
+    $("#btnUpdateModifyReview").click(updateMovieReview);
+    $("#btnDeleteModifyReview").click(deleteMovieReview);
 
-    $("#AddMovieRatingPage").on("pageshow",function(){
+    $("#AddMovieReviewPage").on("pageshow",function(){
         updateUserNameDropdown("#selectReviewerUserName");
     });
-    //$("#RJEditFeedbackPage").on("pageshow",function(){
-      //  RJupdateTypesDropdown("#RJselectTypeModify","");
-    //});
-
-    //$("#RJViewFeedbackPage").on("pageshow",RJgetReviews);
-    //$("#RJEditFeedbackPage").on("pageshow",RJshowCurrentReview);
-
-
+    $("#ModifyMovieReviewPage").on("pageshow",function(){
+        updateUserNameDropdown("#selectReviewerUserNameModify");
+    });
+    $("#ViewMovieReviewPage").on("pageshow",getReviews);
+    $("#ModifyMovieReviewPage").on("pageshow",showCurrentReview);
     $("#searchText").submit(function(e){
         e.preventDefault();
     })
@@ -25,14 +21,12 @@ function eventHandlers() {
             callAPI('GET', searchMovieEventHandler, API, ['s=' + searchValue]);
         }
     });
-
     $('#movieList').on('click', 'a.' + MOVIE_CLICK_CLASS, function (e) {
         var movieId = this.dataset.movieId;
         if (movieId && movieId.length > 0) {
             callAPI('GET', movieClickedEventHandler, API, ['i=' + movieId]);
         }
     });
-
     $("#btnClearDatabase").click(clearDatabase);
 
 }

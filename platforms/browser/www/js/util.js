@@ -29,6 +29,37 @@ function doValidate_frmAddMovieReview() {
     return form.valid();
 }
 
+function doValidate_frmModifyMovieReview() {
+    var form = $("#frmModifyMovieReview");
+    form.validate({
+        rules: {
+            selectReviewerUserNameModify: {
+                required: true,
+            },
+            txtReviewerCommentsModify: {
+                required: true,
+            },
+            txtMovieRatingModify: {
+                required: true,
+                range:[0,5]
+            }
+        },
+        messages: {
+            selectReviewerUserNameModify: {
+                required: "Reviewer is required"
+            },
+            txtReviewerCommentsModify: {
+                required: "Reviewer comments are required"
+            },
+            txtMovieRatingModify: {
+                required: "Movie rating is required",
+                range: "Movie rating must be between 0-5"
+            }
+        }
+    });
+    return form.valid();
+}
+
 function doValidate_frmUserRegistration() {
     var form = $("#frmUserRegistration");
     form.validate({

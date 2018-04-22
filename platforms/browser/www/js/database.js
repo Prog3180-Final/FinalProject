@@ -34,7 +34,7 @@ var DB = {
 
             sql = "CREATE TABLE IF NOT EXISTS review( " +
                     "id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT," +
-                    "movieId INTEGER NOT NULL,"+
+                    "movieId VARCHAR(20) NOT NULL,"+
                     "reviewerId INTEGER NOT NULL," +
                     "reviewerComments TEXT," +
                     "recommend VARCHAR(1)," +

@@ -13,6 +13,7 @@ var Review = {
             tx.executeSql(sql, options, callback, errorHandler);
         }
         function successTransaction() {
+            alert("Movie review created successfully!");
             console.info("Success: insert transaction successful");
         }
         db.transaction(txFunction, errorHandler, successTransaction);
@@ -39,9 +40,20 @@ var Review = {
         }
         db.transaction(txFunction, errorHandler, successTransaction);
     },
+    selectByMovieId:function(options,callback){
+        function txFunction(tx) {
+            var sql = "SELECT * FROM review WHERE movieId=?;";
+
+            tx.executeSql(sql, options, callback, errorHandler);
+        }
+        function successTransaction() {
+            console.info("Success: select transaction successful");
+        }
+        db.transaction(txFunction, errorHandler, successTransaction);
+    },
     update: function(options, callback){
         function txFunction(tx) {
-            var sql = "UPDATE review SET movieId=?,reviewerId=?, reviewerComments=?, recommend=?, rating=?,reviewDate=? WHERE id=?;";
+            var sql = "UPDATE review SET reviewerId=?, reviewerComments=?, recommend=?, rating=? WHERE id=?;";
             tx.executeSql(sql, options, callback, errorHandler);
         }
         function successTransaction() {
