@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.cordova.moviedatabase" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Movie database</name>
-    <icon src="res/android/icon.png" />
+    <icon density="mdpi" height="57" platform="android" src="res/icon/android/icon.png" witdh="57" />
     <description>
         Final project - Movie database by Rawa Jalal and Steven Ye
     </description>
@@ -16,4 +16,5 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <allow-navigation href="*" />
 </widget>

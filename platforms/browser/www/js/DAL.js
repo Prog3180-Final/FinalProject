@@ -79,7 +79,6 @@ var User = {
     insert : function(options,callback){
         function txFunction(tx) {
             var sql = "INSERT INTO user(userName,emailAddress,phoneNumber) VALUES (?,?,?);"
-
             tx.executeSql(sql, options, callback, errorHandler);
         }
         function successTransaction() {

@@ -33,7 +33,8 @@ function addMovieReview(e){
     }
 };
 
-function addUser(){
+function addUser(e){
+    e.preventDefault();
     if(doValidate_frmUserRegistration()){
         var userName = $("#txtUserName").val();
         var emailAddress =$("#txtEmailAddress").val();
@@ -116,7 +117,8 @@ function updateMovieReview(e){
     }
 };
 
-function deleteMovieReview(){
+function deleteMovieReview(e){
+    e.preventDefault();
     var id = localStorage.getItem("modifyReviewId");
     var options=[id];
     function callback(){

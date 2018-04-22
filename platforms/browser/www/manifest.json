@@ -8,9 +8,9 @@
   "author": "Rawa Jalal and Steven Ye",
   "icons": [
     {
-      "src": "res/android/icon.png",
+      "src": "res/icon/android/icon.png",
       "type": "image/png",
-      "sizes": "undefinedxundefined"
+      "sizes": "undefinedx57"
     }
   ],
   "start_url": "index.html"
