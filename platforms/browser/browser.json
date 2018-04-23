@@ -9,11 +9,24 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-certificates": {
+      "PACKAGE_NAME": "io.cordova.moviedatabase"
     }
   },
   "dependent_plugins": {},
-  "modules": [],
+  "modules": [
+    {
+      "file": "plugins/cordova-plugin-certificates/www/certificate.js",
+      "id": "cordova-plugin-certificates.Certificates",
+      "pluginId": "cordova-plugin-certificates",
+      "clobbers": [
+        "cordova.plugins.certificates"
+      ]
+    }
+  ],
   "plugin_metadata": {
-    "cordova-plugin-whitelist": "1.3.3"
+    "cordova-plugin-whitelist": "1.3.3",
+    "cordova-plugin-certificates": "0.6.4"
   }
 }
